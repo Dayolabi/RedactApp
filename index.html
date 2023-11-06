@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Scrambler</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Scrambler</h1>
+        <div class="input-container">
+            <h2>Original Text</h2>
+            <textarea id="originalText" rows="6" cols="50" placeholder="Enter your text here"></textarea>
+            <label for="wordsToScramble">Words to Scramble:</label>
+            <input type="text" id="wordsToScramble" placeholder="Enter words to scramble (separated by spaces)">
+            <label for="replaceWith">Replace With:</label>
+            <input type="text" id="replaceWith" placeholder="Replacement characters">
+            <button id="redactButton">Redact Now</button>
+        </div>
+
+        <div id="output-container">
+            <h2>Scrambled Text</h2>
+            <p id="scrambledText"></p>
+            <div class="stats">
+                <p id="stats"></p>
+                <div class="buttons">
+                    <button id="copyButton" style="display: none">Copy Output</button>
+                    <button id="clearButton">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
