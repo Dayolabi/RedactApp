@@ -1,3 +1,5 @@
+# RedactApp
+
 Title: Text Scrambler App
 
 Description:
@@ -16,5 +18,3 @@ Key Features:
 5. User-Friendly Interface: The app features a clean and intuitive user interface, making it accessible and simple to use.
 
 Protect your privacy and sensitive information by utilizing the Text Scrambler App, ensuring that only the content you want to share is visible while keeping the rest confidential.
-
-# RedactApp
