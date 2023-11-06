@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     redactButton.addEventListener("click", function () {
         const originalText = originalTextElement.value;
-        const wordsToRedact = wordsToRedactElement.value.split(" ");
+        let wordsToRedact = wordsToRedactElement.value.split(" ");
+        wordsToRedact = wordsToRedact.filter(word => word.trim() !== ''); // Remove empty strings
+
         let replaceWith = replaceWithElement.value.trim();
 
         if (replaceWith === "") {
@@ -20,6 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (originalText.trim() === '') {
             alert("Please enter some text in the 'Original Text' box.");
+            return;
+        }
+
+        if (wordsToRedact.length === 0) {
+            alert("Please enter words to redact in the 'Words to Redact' box.");
             return;
         }
 
