@@ -17,11 +17,15 @@ h1 {
   text-shadow: 2px 2px 4px #ddd;
 }
 
-h1, h2, label[for="wordsToScramble"], label[for="replaceWith"] {
+h1,
+h2,
+label[for="wordsToRedact"],
+label[for="replaceWith"] {
   color: #4CAF50;
 }
 
-.input-container, #output-container {
+.input-container,
+#output-container {
   margin: 20px 0;
   padding: 20px;
   border: 1px solid #ccc;
@@ -30,7 +34,8 @@ h1, h2, label[for="wordsToScramble"], label[for="replaceWith"] {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-textarea, input {
+textarea,
+input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -86,6 +91,7 @@ button:hover {
   background-color: #357ebd;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline-color: #4CAF50;
 }
